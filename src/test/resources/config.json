@@ -1,0 +1,7 @@
+{
+  "screenshotsFolder": "target/failed-tests-screenshots/",
+  "platform": "chrome",
+  "host": "http://www.n11.com",
+  "user": "ahmetbabacan42@gmail.com",
+  "password": "Telefon1"
+}
