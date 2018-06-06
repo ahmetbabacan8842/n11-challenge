@@ -43,7 +43,13 @@ public abstract class BaseTest {
 
     @Before
     public void setUp() {
-        if ("firefox".equalsIgnoreCase(ConfigReader.getInstance().getPlatform())) {
+        String platform = System.getProperty("platform");
+
+        if (platform == null) {
+            platform = ConfigReader.getInstance().getPlatform();
+        }
+
+        if ("firefox".equalsIgnoreCase(platform)) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         } else {
