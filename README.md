@@ -2,6 +2,10 @@
 
 ## About
 Tests n11.com Facebook login cases.
+              Login cases.
+              Login cases(unsuccesfully login, because take a screenshot)
+              Categories cases.
+              Author cases.
 
 ## Running
 
