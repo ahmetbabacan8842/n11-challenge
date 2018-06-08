@@ -11,6 +11,8 @@ public class HomePage extends Page {
 
     private By loginLinkSelector = By.cssSelector("#header .myAccount .btnSignIn");
 
+    private By goToBookMusicFilmGameLinkSelector = By.cssSelector("#contentMain .container .catMenu .catMenuItem");
+
     public HomePage(WebDriver driver) {
         super("/", driver);
     }
@@ -23,4 +25,7 @@ public class HomePage extends Page {
         return getDriver().findElement(myAccountMenuUserFullNameLinkSelector);
     }
 
+    public WebElement getGoToBookMusicFilmGameLink() {
+        return getDriver().findElements(goToBookMusicFilmGameLinkSelector).get(7);
+    }
 }

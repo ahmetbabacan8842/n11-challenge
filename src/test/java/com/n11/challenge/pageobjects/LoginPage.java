@@ -13,6 +13,8 @@ public class LoginPage extends Page {
 
     private final By loginButtonSelector = By.id("loginButton");
 
+    private final By facebookLoginLinkSelector = By.cssSelector("#loginForm .button.inicon.facebook.medium.facebookBtn.btnLogin");
+
     public LoginPage(WebDriver driver) {
         super("/giris-yap", driver);
     }
@@ -27,6 +29,10 @@ public class LoginPage extends Page {
 
     public WebElement getLoginButton() {
         return getDriver().findElement(loginButtonSelector);
+    }
+
+    public WebElement getFacebookLoginLink(){
+      return getDriver().findElement(facebookLoginLinkSelector);
     }
 
 }

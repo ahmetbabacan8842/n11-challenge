@@ -47,4 +47,12 @@ public final class ConfigReader {
     public String getScreenshotsFolder() {
         return configJson.getString("screenshotsFolder");
     }
+
+    public String getFacebookUser() {
+        return configJson.getString("facebookUser");
+    }
+
+    public String getFacebookPassword() {
+        return configJson.getString("facebookPassword");
+    }
 }
